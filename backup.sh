@@ -47,7 +47,7 @@ SECOND_LATEST_NAME=$(latest_dir $DEST_BASE_DIR)
 
 mkdir -p $DEST_BASE_DIR/$LATEST_NAME
 
-OPTIONS="-avv"
+OPTIONS="-avvz"
 if [ -n "$SECOND_LATEST_NAME" ]; then
 	OPTIONS="${OPTIONS} --link-dest=$DEST_BASE_DIR/$SECOND_LATEST_NAME/"
 fi
